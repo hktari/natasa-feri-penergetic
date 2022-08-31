@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Vox Round Medium";
+    src: url('https://www.penergetic.com/typo3conf/ext/pixelschubser/Resources/Public/Fonts/vox-round-medium.woff2');
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url('https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Vox Round Medium", sans-serif;
+}
