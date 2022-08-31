@@ -36,8 +36,12 @@ p {
     line-height: 1.65em;
 }
 
-.container{
+.container {
     padding: 0 10px;
+}
+
+.section-title {
+    margin: 30px 0px 10px 0px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -53,7 +57,7 @@ header h5 {
     font-size: 14px;
 }
 
-header > div {
+header>div {
     padding-top: 20px;
     background-color: rgba(200, 200, 200, 0.3);
 }
@@ -91,3 +95,38 @@ nav ul li {
 }
 
 
+/* -------------------------------------------------------------------------- */
+/*                                  about us                                  */
+/* -------------------------------------------------------------------------- */
+
+#o-nas {
+    padding-top: 8px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  products                                  */
+/* -------------------------------------------------------------------------- */
+
+.product-container {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.product-container img {
+    object-fit: cover;
+    width: 80vw;
+}
+
+.product-title {
+    padding: 5px 10px;
+}
+
+.product-title:hover {
+    background-color: #4a4a4a;
+    color: white;
+}
