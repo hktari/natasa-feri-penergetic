@@ -1,3 +1,89 @@
-body {
-    background-color: orange;
+p {
+    /* line-height: 1em; */
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+section {
+    margin-top: 50px;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  about us                                  */
+/* -------------------------------------------------------------------------- */
+
+.about-details {
+    padding-right: 70px;
+}
+
+.about-container img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  products                                  */
+/* -------------------------------------------------------------------------- */
+
+.product-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   contact                                  */
+/* -------------------------------------------------------------------------- */
+
+.contact-container {
+    font-size: 16px;
+}
+
+.contact-container img {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+#kontakt::after {
+    height: 100px;
+    content: '';
+    display: block;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                               call to action                               */
+/* -------------------------------------------------------------------------- */
+
+
+#cta {
+    animation: zoom-in 0.5s ease-in;
+}
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1,
+    }
 }

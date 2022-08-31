@@ -116,6 +116,10 @@ nav ul li {
     padding-top: 8px;
 }
 
+.about-container img {
+    height: 400px;
+}
+
 
 /* -------------------------------------------------------------------------- */
 /*                                  products                                  */
