@@ -31,15 +31,29 @@ header {
     background-repeat: no-repeat;
 }
 
-header h1, h5 {
+p {
+    font-family: "Source Sans Pro";
+    line-height: 1.65em;
+}
+
+.container{
+    padding: 0 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   header                                   */
+/* -------------------------------------------------------------------------- */
+
+header h1,
+h5 {
     margin: 0;
 }
 
-header h5{
+header h5 {
     font-size: 14px;
 }
 
-header .container {
+header > div {
     padding-top: 20px;
     background-color: rgba(200, 200, 200, 0.3);
 }
@@ -68,9 +82,12 @@ nav ul {
 nav ul li {
     z-index: 1;
 }
+
 .nav-item {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
     color: white;
 }
+
+
