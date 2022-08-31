@@ -104,9 +104,12 @@ nav ul li {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    color: white;
+    color: lightgray;
 }
 
+.nav-item:hover {
+    color: white;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                  about us                                  */
@@ -140,10 +143,12 @@ nav ul li {
 }
 
 .product-title {
+    margin-top: 15px;
     padding: 5px 10px;
+    transition: background-color 0.2s ease-out;
 }
 
-.product-title:hover {
+.product-title.active {
     background-color: #4a4a4a;
     color: white;
 }
