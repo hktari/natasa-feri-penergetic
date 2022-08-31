@@ -140,6 +140,32 @@ nav ul li {
 .product-container img {
     object-fit: cover;
     width: 80vw;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
+
+.product-body {
+    height: 180px;
+    position: relative;
+}
+
+.product-text {
+    position: absolute;
+    background-color: #4a4a4a;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    height: 100%;
+    width: 75%;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    animation-duration: 0.4s;
+}
+
+.product-container img.inactive {
+    opacity: 0;
 }
 
 .product-title {
