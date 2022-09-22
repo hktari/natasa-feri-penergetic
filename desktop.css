@@ -33,6 +33,7 @@ section h2{
     padding: 30px;
     margin: 0 auto;
     width: 300px;
+    border-radius: 2px;
     background-color: rgba(250, 250, 250, 0.651);
 }
 
