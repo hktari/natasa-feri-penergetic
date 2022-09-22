@@ -88,6 +88,10 @@ header h5 {
         0.5px 0.5px 0 var(--text-shadow-color),
         0.5px -0.5px 0 var(--text-shadow-color),
         -0.5px -0.5px 0 var(--text-shadow-color);
+    background-color: #eee3;
+    margin: 0 auto;
+    padding: 4px 8px;
+    display: inline-block;
 }
 
 header>div {
