@@ -50,7 +50,7 @@ header {
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 50%;
+    background-position-y: 65%;
 }
 
 header::before {
