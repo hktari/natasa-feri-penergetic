@@ -326,6 +326,11 @@ footer small {
     height: 25px;
 }
 
+.product-detail-wrapper h2 i{
+    margin-left: 6px;
+}
+
+
 .about-product img {
     display: block;
     margin: 0 auto;
