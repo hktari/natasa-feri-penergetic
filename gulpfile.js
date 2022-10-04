@@ -1,15 +1,17 @@
 import fileinclude from 'gulp-file-include'
 import pkg from 'gulp';
+import * as fsExtra from "fs-extra";
 const { src, dest, watch, series } = pkg;
 
-import fs from 'fs'
+
+export function serve() {
+  return watch(['src/**/*.css', 'src/**/*.html'], build);
+}
 
 export function clean(cb) {
-  fs.mkdir('dist', err => {
-    fs.rm('dist', { recursive: true }, err => {
-      cb(err);
-    })
-  })
+  fsExtra.emptyDir('dist', err => {
+    cb(err)
+  });
 }
 
 export function render() {
@@ -36,4 +38,6 @@ function assets(){
     .pipe(dest('./dist/assets/'));
 }
 
-export default series(clean, render, css, script, assets)
+const build = series(clean, render, css, script, assets)
+
+export default build
