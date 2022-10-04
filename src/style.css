@@ -201,33 +201,8 @@ nav ul li {
     position: relative;
 }
 
-.text-container {
-    position: absolute;
-    background-color: #4a4a4a;
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 100%;
-    transition: opacity 0.4s ease;
-    opacity: 0;
-    padding: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.product-text {
-    text-align: center;
-    color: white;
-}
-
-
-.product-container.active .text-container {
-    opacity: 1;
-}
-
-.product-container.active img {
-    opacity: 0;
+.text-container{
+    display: none;
 }
 
 .product-title {
@@ -240,13 +215,6 @@ nav ul li {
 .product-subtitle{
     display: block;
 }
-
-.product-container.active .product-title {
-    background-color: #4a4a4a;
-    color: white;
-}
-
-
 
 /* -------------------------------------------------------------------------- */
 /*                                   contact                                  */
