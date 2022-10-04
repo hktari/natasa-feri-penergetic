@@ -65,6 +65,7 @@ section h2{
 .about-container img {
     display: block;
     margin: 0 auto;
+    border-radius: 2px;
 }
 
 
@@ -170,4 +171,10 @@ section h2{
 
 .product-detail-wrapper > section{
     margin-top: 36px;
+}
+
+.product-detail-wrapper::after {
+    content: '';
+    display: block;
+    height: 75px;
 }
