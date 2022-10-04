@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../_partial/head.html')
+
+<body>
+    <div class="page-wrap">
+
+        @@include('../_partial/header.html')
+
+        <main>
+            <div class="w3-content product-detail-wrapper">
+                @@include('../_partial/products/about.html', {
+                    "title": "Penergetic b",
+                    "image": "https://www.penergetic.com/fileadmin/_processed_/3/3/csm_Gruppe_Eimer_CB_Boden_Web_d9ba68dab4.jpg",
+                    "text": "Izdelek imogoča formacijo humusa. Rastlinam omogoči dostop do hranljivih snovi in tako ustvari najboljše pogoje za kultivacijo rastlin"
+                })
+                
+                <section class="application-product">
+                    <div class="w3-container">
+                        <h2>Aplikacija <i class="fa-solid fa-gears"></i></h2>
+                        <p class="text-detail">Penergetic b se uporablja na travnikih in njivah. Dozira se vsaj 10 dni pred setvijo in neposredno po žetvni. Penergetic b se lahko uporablja skupaj z ostalimi gnojili oz. škropivi.</p>
+                    </div>
+                </section>
+
+                <section class="dose-product">
+                    <div class="w3-container">
+                        <h2>Doziranje <i class="fa-sharp fa-solid fa-vial"></i>
+                        </h2>
+                        <table class="table">
+                            <tr>
+                                <th>Kalcijev bentonit</th>
+                                <th>Melasa</th>
+                            </tr>
+                            <tr>
+                                <td>300-500 g / ha</td>
+                                <td>300-500 ml / ha</td>
+                            </tr>
+                        </table>
+
+                        <br/>
+                        <br/> za več informacij poglejte <a class="link" href="https://www.penergetic.com/en/products/penergetic-b-soil">stran proizvajalca</a>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+    </div>
+
+    @@include('../_partial/footer.html') @@include('../_partial/scripts.html')
+</body>
+
+</html>
