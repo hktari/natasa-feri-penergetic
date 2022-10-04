@@ -282,3 +282,59 @@ footer small {
     opacity: 0.25;
     line-height: var(--footer-height);
 }
+
+.link {
+    background-color: #000c;
+    padding: 0 4px;
+    color: white;
+}
+
+.link:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.link:active {
+    outline: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    table                                   */
+/* -------------------------------------------------------------------------- */
+
+.table th {
+    border-bottom: 0.5px solid #000;
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 15px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             product detail page                            */
+/* -------------------------------------------------------------------------- */
+
+.product-detail-wrapper>section {
+    margin-top: 18px;
+}
+
+.product-detail-wrapper::after {
+    content: '';
+    display: block;
+    height: 25px;
+}
+
+.about-product img {
+    display: block;
+    margin: 0 auto;
+}
+
+.about-product .text-detail {
+    margin-top: 9px;
+}
+
+.text-detail {
+    font-size: 18px;
+}
