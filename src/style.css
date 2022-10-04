@@ -221,6 +221,7 @@ nav ul li {
     color: white;
 }
 
+
 .product-container.active .text-container {
     opacity: 1;
 }
@@ -233,6 +234,11 @@ nav ul li {
     margin-top: 15px;
     padding: 5px 10px;
     transition: background-color 0.2s ease-out;
+    text-align: center;
+}
+
+.product-subtitle{
+    display: block;
 }
 
 .product-container.active .product-title {
