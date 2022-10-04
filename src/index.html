@@ -1,36 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NK-Trade</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css" integrity="sha512-Ef5r/bdKQ7JAmVBbTgivSgg3RM+SLRjwU0cAgySwTSv4+jYcVeDukMp+9lZGWT78T4vCUxgT3g+E8t7uabwRuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 768px)">
-</head>
+@@include('./_partial/head.html')
 
 <body>
-    <header style="background-image: url('assets/images/banner-2.jpg');">
-        <div>
-            <div class="header-text-container">
-                <h1>NK Trade</h1>
-                <h5>official penergetic partner</h5>
-            </div>
-            <nav>
-                <div class="nav-bg"></div>
-                <ul>
-                    <!-- <li><a class="nav-item" href="/">Domov</a></li> -->
-                    <li><a class="nav-item" href="#produkti">Produkti</a></li>
-                    <li><a class="nav-item" href="#kontakt">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    @@include('./_partial/header.html')
     <main>
         <section id="o-nas">
             <div class="container about-container">
@@ -55,7 +29,8 @@
                 <h2 class="section-title">Produkti</h2>
                 <div class="w3-row">
                     <div class="w3-col w3-half">
-                        <a class="product-container" href="https://www.penergetic.com/en/products/penergetic-w-water/">
+                        <a class="product-container" href="/products/penergetic-w.html">
+                        <!-- <a class="product-container" href="https://www.penergetic.com/en/products/penergetic-w-water/"> -->
                             <div class="product-body">
                                 <img src="/assets/images/penergetic-w.png" alt="penergetic w">
                                 <div class="text-container">
@@ -180,10 +155,7 @@
             </div>
         </section>
     </main>
-    <footer>
-        <a href="https://www.bostjankamnik.com"><small>bkamnik 2022</small></a>
-    </footer>
-    <script src="script.js"></script>
+    @@include('./_partial/footer.html') @@include('./_partial/scripts.html')
 </body>
 
 </html>
