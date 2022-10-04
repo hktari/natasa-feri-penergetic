@@ -21,5 +21,19 @@ export function render() {
     .pipe(dest('./dist/'));
 };
 
+function css() {
+  return src(['src/**/*.css'])
+    .pipe(dest('./dist/'));
+}
 
-export default series(clean, render)
+function script(){
+  return src(['src/**/*.js'])
+    .pipe(dest('./dist/'));
+}
+
+function assets(){
+  return src(['src/assets/**'])
+    .pipe(dest('./dist/assets/'));
+}
+
+export default series(clean, render, css, script, assets)
