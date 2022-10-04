@@ -1,0 +1,259 @@
+@font-face {
+    font-family: "Vox Round Medium";
+    src: url('/assets/fonts/vox-round-medium.woff2');
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url('https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Vox Round Medium", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+}
+
+p {
+    font-family: "Source Sans Pro";
+    line-height: 1.65em;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.section-title {
+    margin: 30px 0px 10px 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   header                                   */
+/* -------------------------------------------------------------------------- */
+
+header {
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 65%;
+}
+
+header::before {
+    content: '';
+    height: 10px;
+    background-color: #000;
+    width: 100vw;
+    display: block;
+}
+
+header h1,
+h5 {
+    margin: 0;
+}
+
+:root {
+    --text-shadow-color: rgba(255, 255, 255, 0.4);
+    --subtitle-shadow-color-: rgba(50, 50, 50, 0.4);
+    --text-shadow-size: 1px
+}
+
+header h1 {
+    font-size: 38px;
+    text-shadow: -2px 2px 0 var(--text-shadow-color),
+        2px 2px 0 var(--text-shadow-color),
+        2px -2px 0 var(--text-shadow-color),
+        -2px -2px 0 var(--text-shadow-color);
+    font-weight: 800;
+}
+
+header h5 {
+    font-size: 12px;
+    color: #2a2a2a;
+    text-shadow: -0.5px 0.5px 0 var(--text-shadow-color),
+        0.5px 0.5px 0 var(--text-shadow-color),
+        0.5px -0.5px 0 var(--text-shadow-color),
+        -0.5px -0.5px 0 var(--text-shadow-color);
+    background-color: #eee3;
+    margin: 0 auto;
+    padding: 4px 8px;
+    display: inline-block;
+}
+
+header>div {
+    padding-top: 45px;
+    background-color: rgba(200, 200, 200, 0.5);
+    position: relative;
+}
+
+
+nav {
+    margin-top: 50px;
+    position: relative;
+}
+
+.nav-bg {
+    background-color: rgba(50, 50, 50, 0.6);
+    filter: blur(60%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+nav ul {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    z-index: 1;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: lightgray;
+}
+
+.nav-item:hover {
+    color: white;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  about us                                  */
+/* -------------------------------------------------------------------------- */
+
+#o-nas {
+    padding-top: 8px;
+}
+
+.about-container img {
+    height: 400px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  products                                  */
+/* -------------------------------------------------------------------------- */
+
+.product-container {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.product-container img {
+    object-fit: cover;
+    width: 80vw;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
+
+.product-body {
+    height: 180px;
+    position: relative;
+}
+
+.text-container {
+    position: absolute;
+    background-color: #4a4a4a;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-text {
+    text-align: center;
+    color: white;
+}
+
+.product-container.active .text-container {
+    opacity: 1;
+}
+
+.product-container.active img {
+    opacity: 0;
+}
+
+.product-title {
+    margin-top: 15px;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease-out;
+}
+
+.product-container.active .product-title {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   contact                                  */
+/* -------------------------------------------------------------------------- */
+
+.contact-container img {
+    max-height: 300px;
+    width: 100vw;
+    object-fit: cover;
+    margin: 0 -15px;
+    margin-top: 20px;
+}
+
+.contact-item a {
+    display: flex;
+    align-items: center;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   footer                                   */
+/* -------------------------------------------------------------------------- */
+
+:root {
+    --footer-height: 40px;
+}
+
+footer {
+    height: var(--footer-height);
+    background-color: #4a4a4a;
+    text-align: center;
+}
+
+footer small {
+    color: white;
+    opacity: 0.25;
+    line-height: var(--footer-height);
+}
