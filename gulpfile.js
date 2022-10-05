@@ -1,7 +1,8 @@
 import fileinclude from 'gulp-file-include'
 import pkg from 'gulp';
 import * as fsExtra from "fs-extra";
-const { src, dest, watch, series } = pkg;
+import webp from 'gulp-webp';
+const { src, dest, watch, series, parallel } = pkg;
 
 
 export function serve() {
@@ -28,16 +29,22 @@ function css() {
     .pipe(dest('./dist/'));
 }
 
-function script(){
+function script() {
   return src(['src/**/*.js'])
     .pipe(dest('./dist/'));
 }
 
-function assets(){
-  return src(['src/assets/**'])
-    .pipe(dest('./dist/assets/'));
+function fonts() {
+  return src(['src/assets/fonts/*'])
+    .pipe(dest('./dist/assets/fonts/'));
 }
 
-const build = series(clean, render, css, script, assets)
+function images() {
+  return src(['src/assets/images/**'])
+    .pipe(webp())
+    .pipe(dest('./dist/assets/images'))
+}
+
+const build = parallel(series(clean, render, css, script, fonts), images)
 
 export default build
