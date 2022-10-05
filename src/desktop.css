@@ -148,10 +148,15 @@ section h2{
     height: 300px;
     width: 100%;
     object-fit: contain;
+    margin-top: 0;
 }
 
 .contact-container .contact-right{
     font-size: 18px;
+}
+
+.contact-container .divider{
+    border-color: transparent;
 }
 
 #kontakt::after {
